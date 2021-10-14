@@ -1,6 +1,16 @@
 # Create a Voice Changing Video Call app with SwiftUI 
 
-See how you can make a simple voice changing application using with Agora UIKit in SwiftUI and Voicemod’s Extension.
+Creating a video call app with Agora is super straightforward now, but what about adding features ontop of that? That's where Agora's [Extension Marketplace](https://console.agora.io/marketplace) comes in.
+
+The Extension Marketplace launched last month and already has several extensions available, with more being added regularly.
+
+In this post we'll show you how to easily add a voice changer to your video call app, and choose between the available voices. Thanks to the [Voicemod Voice Changer extension](https://console.agora.io/marketplace/extension/introduce?serviceName=voicemod) there are just three steps for changing your voice with this extension:
+
+- Enable the extension
+- Pass extension credentials
+- Choose the voice
+
+Let's get started.
 
 ## Prerequisites
 
@@ -11,7 +21,7 @@ See how you can make a simple voice changing application using with Agora UIKit 
 
 ## Setup
 
-Let’s start with a new, single-view iOS project. Create the project in Xcode, choosing SwftUI for the interface, and then add Agora's UIKit Package.
+Let’s start with a new, single-view iOS project. Create the project in Xcode, choosing SwftUI for the interface, and then add [Agora UIKit](https://github.com/AgoraIO-Community/iOS-UIKit) Package.
 
 Add the package by opening selecting `File > Swift Packages > Add Package Dependency`, then paste in the link to this Swift Package:
 
@@ -256,6 +266,14 @@ There are other extensions I'd encourage you to try out, and they can all be fou
 
 https://console.agora.io/marketplace
 
+The same settings can be applied to an application made directly with the Agora SDK, but you will need to make sure you're using 4.0.0 version of the SDK. Details can be found here:
+
+https://docs.agora.io/en/video-call-4.x-preview/landing-page?platform=iOS
+
+The methods such as `setExtensionProperty` used in this post are adaptations of the SDK's builtin methods relating to extensions, and they can be found in this file from Agora Video UIKit:
+
+https://github.com/AgoraIO-Community/iOS-UIKit/blob/4.0.0-preview.7/Sources/Agora-UIKit/AgoraVideoViewer%2BAgoraExtensions.swift
+
 ## Testing
 
 You can try this app out by following the GitHub link here:
@@ -264,7 +282,7 @@ https://github.com/AgoraIO-Community/Extension-Voicemod-SwiftUI
 
 ## Other Resources
 
-For more information about building applications using Agora.io SDKs, take a look at the [Agora Video Call Quickstart Guide](https://docs.agora.io/en/Video/start_call_ios?platform=iOS&utm_source=medium&utm_medium=blog&utm_campaign=extension-voicemod-swiftui) and [Agora API Reference](https://docs.agora.io/en/Video/API Reference/oc/docs/headers/Agora-Objective-C-API-Overview.html?utm_source=medium&utm_medium=blog&utm_campaign=extension-voicemod-swiftui).
+For more information about building applications using Agora.io SDKs, take a look at the [Agora Video Call Quickstart Guide](https://docs.agora.io/en/Video/start_call_ios?platform=iOS&utm_source=medium&utm_medium=blog&utm_campaign=extension-voicemod-swiftui) and [Agora API Reference](https://docs.agora.io/en/Video/API%20Reference/oc/docs/headers/Agora-Objective-C-API-Overview.html?utm_source=medium&utm_medium=blog&utm_campaign=extension-voicemod-swiftui).
 
 I also invite you to [join the Agora.io Developer Slack community](https://www.agora.io/en/join-slack/).
 
