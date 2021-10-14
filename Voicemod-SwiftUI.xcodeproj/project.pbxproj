@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F33B14882718390F00CADE20 /* VoicemodAudioFilterExtension in Frameworks */ = {isa = PBXBuildFile; productRef = F33B14872718390F00CADE20 /* VoicemodAudioFilterExtension */; };
+		F33CAF7926E8EFC9002273E8 /* Voicemod_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CAF7826E8EFC9002273E8 /* Voicemod_SwiftUIApp.swift */; };
+		F33CAF7B26E8EFC9002273E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CAF7A26E8EFC9002273E8 /* ContentView.swift */; };
+		F33CAF7D26E8EFD4002273E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33CAF7C26E8EFD4002273E8 /* Assets.xcassets */; };
+		F33CAF8026E8EFD4002273E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33CAF7F26E8EFD4002273E8 /* Preview Assets.xcassets */; };
+		F33CAF8926E8F5B0002273E8 /* AgoraUIKit_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = F33CAF8826E8F5B0002273E8 /* AgoraUIKit_iOS */; };
+		F33CAF8B26E8F79F002273E8 /* AppKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CAF8A26E8F79F002273E8 /* AppKeys.swift */; };
+		F33CAFBB26EA3AFA002273E8 /* VideoCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CAFBA26EA3AF9002273E8 /* VideoCallView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F33CAF7526E8EFC9002273E8 /* Voicemod-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voicemod-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F33CAF7826E8EFC9002273E8 /* Voicemod_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voicemod_SwiftUIApp.swift; sourceTree = "<group>"; };
+		F33CAF7A26E8EFC9002273E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F33CAF7C26E8EFD4002273E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F33CAF7F26E8EFD4002273E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F33CAF8126E8EFD4002273E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F33CAF8A26E8F79F002273E8 /* AppKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKeys.swift; sourceTree = "<group>"; };
+		F33CAFBA26EA3AF9002273E8 /* VideoCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCallView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F33CAF7226E8EFC9002273E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F33CAF8926E8F5B0002273E8 /* AgoraUIKit_iOS in Frameworks */,
+				F33B14882718390F00CADE20 /* VoicemodAudioFilterExtension in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F33CAF6C26E8EFC9002273E8 = {
+			isa = PBXGroup;
+			children = (
+				F33CAF7726E8EFC9002273E8 /* Voicemod-SwiftUI */,
+				F33CAF7626E8EFC9002273E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F33CAF7626E8EFC9002273E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F33CAF7526E8EFC9002273E8 /* Voicemod-SwiftUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F33CAF7726E8EFC9002273E8 /* Voicemod-SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				F33CAF7826E8EFC9002273E8 /* Voicemod_SwiftUIApp.swift */,
+				F33CAF7A26E8EFC9002273E8 /* ContentView.swift */,
+				F33CAFBA26EA3AF9002273E8 /* VideoCallView.swift */,
+				F33CAF8A26E8F79F002273E8 /* AppKeys.swift */,
+				F33CAF7C26E8EFD4002273E8 /* Assets.xcassets */,
+				F33CAF8126E8EFD4002273E8 /* Info.plist */,
+				F33CAF7E26E8EFD4002273E8 /* Preview Content */,
+			);
+			path = "Voicemod-SwiftUI";
+			sourceTree = "<group>";
+		};
+		F33CAF7E26E8EFD4002273E8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F33CAF7F26E8EFD4002273E8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F33CAF7426E8EFC9002273E8 /* Voicemod-SwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F33CAF8426E8EFD4002273E8 /* Build configuration list for PBXNativeTarget "Voicemod-SwiftUI" */;
+			buildPhases = (
+				F33CAF7126E8EFC9002273E8 /* Sources */,
+				F33CAF7226E8EFC9002273E8 /* Frameworks */,
+				F33CAF7326E8EFC9002273E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Voicemod-SwiftUI";
+			packageProductDependencies = (
+				F33CAF8826E8F5B0002273E8 /* AgoraUIKit_iOS */,
+				F33B14872718390F00CADE20 /* VoicemodAudioFilterExtension */,
+			);
+			productName = "Voicemod-SwiftUI";
+			productReference = F33CAF7526E8EFC9002273E8 /* Voicemod-SwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F33CAF6D26E8EFC9002273E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					F33CAF7426E8EFC9002273E8 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = F33CAF7026E8EFC9002273E8 /* Build configuration list for PBXProject "Voicemod-SwiftUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F33CAF6C26E8EFC9002273E8;
+			packageReferences = (
+				F33CAF8726E8F5B0002273E8 /* XCRemoteSwiftPackageReference "iOS-UIKit" */,
+				F33B14862718390F00CADE20 /* XCRemoteSwiftPackageReference "Extension-Voicemod-iOS" */,
+			);
+			productRefGroup = F33CAF7626E8EFC9002273E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F33CAF7426E8EFC9002273E8 /* Voicemod-SwiftUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F33CAF7326E8EFC9002273E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F33CAF8026E8EFD4002273E8 /* Preview Assets.xcassets in Resources */,
+				F33CAF7D26E8EFD4002273E8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F33CAF7126E8EFC9002273E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F33CAFBB26EA3AFA002273E8 /* VideoCallView.swift in Sources */,
+				F33CAF8B26E8F79F002273E8 /* AppKeys.swift in Sources */,
+				F33CAF7B26E8EFC9002273E8 /* ContentView.swift in Sources */,
+				F33CAF7926E8EFC9002273E8 /* Voicemod_SwiftUIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F33CAF8226E8EFD4002273E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F33CAF8326E8EFD4002273E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F33CAF8526E8EFD4002273E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Voicemod-SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 278494H572;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Voicemod-SwiftUI/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.rocketar.Voicemod-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F33CAF8626E8EFD4002273E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Voicemod-SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 278494H572;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Voicemod-SwiftUI/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.rocketar.Voicemod-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F33CAF7026E8EFC9002273E8 /* Build configuration list for PBXProject "Voicemod-SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F33CAF8226E8EFD4002273E8 /* Debug */,
+				F33CAF8326E8EFD4002273E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F33CAF8426E8EFD4002273E8 /* Build configuration list for PBXNativeTarget "Voicemod-SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F33CAF8526E8EFD4002273E8 /* Debug */,
+				F33CAF8626E8EFD4002273E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F33B14862718390F00CADE20 /* XCRemoteSwiftPackageReference "Extension-Voicemod-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AgoraIO-Community/Extension-Voicemod-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+		F33CAF8726E8F5B0002273E8 /* XCRemoteSwiftPackageReference "iOS-UIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:AgoraIO-Community/iOS-UIKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = "4.0.0-preview";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F33B14872718390F00CADE20 /* VoicemodAudioFilterExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F33B14862718390F00CADE20 /* XCRemoteSwiftPackageReference "Extension-Voicemod-iOS" */;
+			productName = VoicemodAudioFilterExtension;
+		};
+		F33CAF8826E8F5B0002273E8 /* AgoraUIKit_iOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F33CAF8726E8F5B0002273E8 /* XCRemoteSwiftPackageReference "iOS-UIKit" */;
+			productName = AgoraUIKit_iOS;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F33CAF6D26E8EFC9002273E8 /* Project object */;
+}
