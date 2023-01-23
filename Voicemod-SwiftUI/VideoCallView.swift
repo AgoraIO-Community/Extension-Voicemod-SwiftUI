@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import AgoraUIKit_iOS
+import AgoraUIKit
 
 struct VideoCallView: View {
 

@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import AgoraUIKit_iOS
+import AgoraUIKit
 
 extension ForEach where Data.Element: Hashable, ID == Data.Element, Content: View {
     init(values: Data, content: @escaping (Data.Element) -> Content) {
@@ -38,8 +38,12 @@ struct ContentView: View {
 
     func joinChannel() {
         self.joinedChannel = true
-        ContentView.agview.viewer.enableExtension(            withVendor: "Voicemod", extension: "VoicemodExtension", enabled: true
+        let enable = ContentView.agview.viewer.enableExtension(            withVendor: "Voicemod", extension: "VoicemodExtension", enabled: true
         )
+        if enable != 0 {
+            print("voicemod not enabled. Code: \(enable)")
+
+        }
         ContentView.agview.join(
             channel: "test", with: AppKeys.agoraToken,
             as: .broadcaster

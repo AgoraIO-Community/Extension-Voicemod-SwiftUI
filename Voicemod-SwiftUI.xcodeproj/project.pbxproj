@@ -7,15 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F33B14882718390F00CADE20 /* VoicemodAudioFilterExtension in Frameworks */ = {isa = PBXBuildFile; productRef = F33B14872718390F00CADE20 /* VoicemodAudioFilterExtension */; };
 		F33CAF7926E8EFC9002273E8 /* Voicemod_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CAF7826E8EFC9002273E8 /* Voicemod_SwiftUIApp.swift */; };
 		F33CAF7B26E8EFC9002273E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CAF7A26E8EFC9002273E8 /* ContentView.swift */; };
 		F33CAF7D26E8EFD4002273E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33CAF7C26E8EFD4002273E8 /* Assets.xcassets */; };
 		F33CAF8026E8EFD4002273E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33CAF7F26E8EFD4002273E8 /* Preview Assets.xcassets */; };
-		F33CAF8926E8F5B0002273E8 /* AgoraUIKit_iOS in Frameworks */ = {isa = PBXBuildFile; productRef = F33CAF8826E8F5B0002273E8 /* AgoraUIKit_iOS */; };
 		F33CAF8B26E8F79F002273E8 /* AppKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CAF8A26E8F79F002273E8 /* AppKeys.swift */; };
 		F33CAFBB26EA3AFA002273E8 /* VideoCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33CAFBA26EA3AF9002273E8 /* VideoCallView.swift */; };
+		F3616497297EA14500E7AE7E /* AgoraUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3616496297EA14500E7AE7E /* AgoraUIKit */; };
+		F397897F27D0F9A6004279C3 /* VoicemodAudioFilterExtension in Frameworks */ = {isa = PBXBuildFile; productRef = F397897E27D0F9A6004279C3 /* VoicemodAudioFilterExtension */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F352630A27CFBADB00D33F5C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F33CAF7526E8EFC9002273E8 /* Voicemod-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voicemod-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,8 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F33CAF8926E8F5B0002273E8 /* AgoraUIKit_iOS in Frameworks */,
-				F33B14882718390F00CADE20 /* VoicemodAudioFilterExtension in Frameworks */,
+				F3616497297EA14500E7AE7E /* AgoraUIKit in Frameworks */,
+				F397897F27D0F9A6004279C3 /* VoicemodAudioFilterExtension in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +59,7 @@
 			children = (
 				F33CAF7726E8EFC9002273E8 /* Voicemod-SwiftUI */,
 				F33CAF7626E8EFC9002273E8 /* Products */,
+				F3E4F18B27CFA119007CA2C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +93,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F3E4F18B27CFA119007CA2C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,6 +110,7 @@
 				F33CAF7126E8EFC9002273E8 /* Sources */,
 				F33CAF7226E8EFC9002273E8 /* Frameworks */,
 				F33CAF7326E8EFC9002273E8 /* Resources */,
+				F352630A27CFBADB00D33F5C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,8 +118,8 @@
 			);
 			name = "Voicemod-SwiftUI";
 			packageProductDependencies = (
-				F33CAF8826E8F5B0002273E8 /* AgoraUIKit_iOS */,
-				F33B14872718390F00CADE20 /* VoicemodAudioFilterExtension */,
+				F397897E27D0F9A6004279C3 /* VoicemodAudioFilterExtension */,
+				F3616496297EA14500E7AE7E /* AgoraUIKit */,
 			);
 			productName = "Voicemod-SwiftUI";
 			productReference = F33CAF7526E8EFC9002273E8 /* Voicemod-SwiftUI.app */;
@@ -127,8 +149,9 @@
 			);
 			mainGroup = F33CAF6C26E8EFC9002273E8;
 			packageReferences = (
-				F33CAF8726E8F5B0002273E8 /* XCRemoteSwiftPackageReference "iOS-UIKit" */,
-				F33B14862718390F00CADE20 /* XCRemoteSwiftPackageReference "Extension-Voicemod-iOS" */,
+				F352631127CFC71400D33F5C /* XCRemoteSwiftPackageReference "Extension-Voicemod-iOS" */,
+				F364D966290030EF00F1BBDC /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */,
+				F3616495297EA14500E7AE7E /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */,
 			);
 			productRefGroup = F33CAF7626E8EFC9002273E8 /* Products */;
 			projectDirPath = "";
@@ -200,7 +223,10 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DRIVERKIT_DEPLOYMENT_TARGET = 21.4;
+				ENABLE_ON_DEMAND_RESOURCES = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -211,19 +237,28 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"$(inherited)",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -261,23 +296,35 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DRIVERKIT_DEPLOYMENT_TARGET = 21.4;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_ON_DEMAND_RESOURCES = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"$(inherited)",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -291,6 +338,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Voicemod-SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 278494H572;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = armv7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Voicemod-SwiftUI/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -313,6 +365,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Voicemod-SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 278494H572;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Voicemod-SwiftUI/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -350,34 +406,42 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F33B14862718390F00CADE20 /* XCRemoteSwiftPackageReference "Extension-Voicemod-iOS" */ = {
+		F352631127CFC71400D33F5C /* XCRemoteSwiftPackageReference "Extension-Voicemod-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AgoraIO-Community/Extension-Voicemod-iOS";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.1;
+				kind = exactVersion;
+				version = 0.2.1;
 			};
 		};
-		F33CAF8726E8F5B0002273E8 /* XCRemoteSwiftPackageReference "iOS-UIKit" */ = {
+		F3616495297EA14500E7AE7E /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:AgoraIO-Community/iOS-UIKit.git";
+			repositoryURL = "https://github.com/AgoraIO-Community/VideoUIKit-iOS";
+			requirement = {
+				kind = exactVersion;
+				version = 4.0.3;
+			};
+		};
+		F364D966290030EF00F1BBDC /* XCRemoteSwiftPackageReference "AgoraRtcEngine_iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AgoraIO/AgoraRtcEngine_iOS";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = "4.0.0-preview";
+				minimumVersion = 4.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F33B14872718390F00CADE20 /* VoicemodAudioFilterExtension */ = {
+		F3616496297EA14500E7AE7E /* AgoraUIKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F33B14862718390F00CADE20 /* XCRemoteSwiftPackageReference "Extension-Voicemod-iOS" */;
-			productName = VoicemodAudioFilterExtension;
+			package = F3616495297EA14500E7AE7E /* XCRemoteSwiftPackageReference "VideoUIKit-iOS" */;
+			productName = AgoraUIKit;
 		};
-		F33CAF8826E8F5B0002273E8 /* AgoraUIKit_iOS */ = {
+		F397897E27D0F9A6004279C3 /* VoicemodAudioFilterExtension */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F33CAF8726E8F5B0002273E8 /* XCRemoteSwiftPackageReference "iOS-UIKit" */;
-			productName = AgoraUIKit_iOS;
+			package = F352631127CFC71400D33F5C /* XCRemoteSwiftPackageReference "Extension-Voicemod-iOS" */;
+			productName = VoicemodAudioFilterExtension;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
